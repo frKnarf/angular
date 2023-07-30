@@ -1,0 +1,36 @@
+* {
+    font-family: 'Sriracha', cursive;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.box {
+    width: 80vh;
+    height: 10vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.btn {
+    margin: 1px;
+}
+
+.Title {
+    margin: 10px;
+}
+
+ul {
+    margin: 20px;
+}
