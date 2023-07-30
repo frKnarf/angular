@@ -12,17 +12,19 @@
   <div class="box">
     <div *ngIf="title" class="Title">{{count}} : {{title}}</div>
 
-    <button [disabled]="!title" class="btn btn-success" (click)="handleClickButton()">Next Caption</button>
-    <button [disabled]="!title" class="btn btn-success" (click)="handleClickButtonDEL()">Next Caption And
+    <button [hidden]="!title" class="btn btn-success" (click)="handleClickButton()">Next Caption</button>
+    <button [hidden]="!title" class="btn btn-success" (click)="handleClickButtonDEL()">Next Caption And
       Delete</button>
   </div>
 
-  <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-    <ul style="font-size: 14px;">
-      <li *ngFor="let captionItem of captionList">{{captionItem.message}}</li>
-    </ul>
-    <ul style="font-size: 14px;">
-      <li *ngFor="let captionItem of usedCaptionList">{{captionItem.message}}</li>
-    </ul>
+  <div class="boxList">
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+      <ul style="font-size: 20px;">
+        <li *ngFor="let captionItem of captionList">{{captionItem.message}}</li>
+      </ul>
+      <ul style="font-size: 20px;">
+        <li *ngFor="let captionItem of usedCaptionList">{{captionItem.message}}</li>
+      </ul>
+    </div>
   </div>
 </body>
