@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <img [src]="imgSrc" style="width: 200px;">
+  <img [src]="imgSrc">
   <span>Caption by โต๊ส</span>
   <div class="box">
     <div *ngIf="title" class="Title">{{count}} : {{title}}</div>
@@ -15,6 +15,9 @@
     <button [hidden]="!title" class="btn btn-success" (click)="handleClickButton()">Next Caption</button>
     <button [hidden]="!title" class="btn btn-success" (click)="handleClickButtonDEL()">Next Caption And
       Delete</button>
+    <div class="btn-restart">
+      <button [hidden]="title" class="btn btn-warning" (click)="restart()">Restart</button>
+    </div>
   </div>
 
   <div class="boxList">

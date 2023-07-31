@@ -65,6 +65,38 @@ export class AppComponent {
     },
   ];
 
+  restart() {
+    this.captionList = [
+      {
+        id: 1,
+        message: 'Welcome to front-end development with Angular',
+        icon: './assets/icon/pngwing.com.png'
+      },
+      {
+        id: 2,
+        message: 'They say don’t try this at home… so I went to my friend’s home!',
+        icon: './assets/icon/pngwing.com (1).png'
+      },
+      {
+        id: 3,
+        message: 'My bed is a magical place I suddenly remember everything I had to do.',
+        icon: './assets/icon/pngwing.com (2).png'
+      },
+      {
+        id: 4,
+        message: 'Friday, my second favorite F word.',
+        icon: './assets/icon/pngwing.com (3).png'
+      },
+      {
+        id: 5,
+        message: 'People say nothing is impossible, but I do nothing every day.',
+        icon: './assets/icon/pngwing.com (4).png'
+      },
+    ];
+    this.title = this.randomCaption();
+    this.count = 0;
+  };
+
   usedCaptionList: CaptionItem[] = [];
 
   constructor() {
